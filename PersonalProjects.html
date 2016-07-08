@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<title>Personal Website</title>
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body class="w3-light-grey">
+
+ <div class="w3-container">
+    <ul class="w3-navbar w3-border w3-card-8 w3-large w3-light-grey">
+      <li><a class=" w3-teal" href="Home.html"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+       <li><a onclick="myFunction()" href="PersonalProjects.html"><i class="fa fa-wrench w3-margin-right"></i>Projects</a></li>
+      <li><a class="" href="http://alexgorb.blogspot.com/"><i class="fa fa-pencil w3-margin-right"></i>Blog</a></li> 
+       <li><a class= href="#"><i class="fa fa-envelope w3-margin-right"></i>Contact</a></li> 
+    </ul>
+    
+ </div>
+ <br>
+
+<div class="w3-row-padding ">
+  <div class="w3-quarter w3-container">
+         <div class= " w3-card-2 w3-round w3-white w3-padding w3-margin-center w3-margin-right" >
+         <h4 class="w3-center">My Profile</h4>
+         <p class="w3-center"><img src="img_avatar3.png" class="w3-circle" style="width:55%" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme "></i> Software Engineer</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Hatboro, PA</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> August 4, 1994</p>
+  
+         
+      </div>  
+      <br>
+        <div class= " w3-card-2 w3-round w3-white w3-padding w3-margin-center w3-center" >
+         <h4 class="w3-center">Social Media</h4>
+            <a href="https://www.facebook.com/alex.gorbachenko.33" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official fa-3x"></i></a>
+    <a href="https://twitter.com/a_gorbs" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter fa-3x"></i></a>
+    <a href="https://www.linkedin.com/in/alex-gorbachenko-9ab7a3b7" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin fa-3x"></i></a>
+        <a href="https://www.instagram.com/alexgorb" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-instagram fa-3x"></i></a>
+  
+         
+      </div> 
+       <br>
+      </div>
+      
+
+      <div class="w3-quarter w3-container w3-center w3-card-2 w3-padding w3-right w3-margin-left w3-white ">
+      <h3>Education </h3>
+
+<p> Penn State University 2016. <br>
+    Information Science and Technology B.S.<br></p>
+<hr>
+<h3>Work Experience </h3>
+
+<p><b>2016: </b><br>
+Software Engineer at Fidelity Investments.<br><b>2015: </b><br>
+May - July<br>
+Intern at Michigan State University, East Lansing MI.</p>
+<hr>
+<h3>Skills </h3>
+<p><b>Languages:</b> C#, C++, HTML, CSS, SQL, Java, XML, UML.<br></p>
+<p><b>Software:</b> MS Word, Excel, PowerPoint, Access, Project, Visual Studios 2012, Oracle SQL Developer, Argo, NetBeans, Arduino, Camtasia, InDesign, TextWrangler. </p>
+ </div>
+  <div class="w3-rest  w3-container w3-content w3-center  w3-padding w3-margin-center w3-card-2 w3-round w3-white w3-padding ">
+    <div>
+  <h2>About Me</h2>
+  <p class="lead"> Hello, welcome to my personal website. My name is Alex Gorbachenko and I graduated from
+      Penn State University in 2016. I will be starting my professonal career at Fidelity Investments
+      as a Software Engineer. Technology has always been interesting to me since I was a little kid. I enjoy working 
+      on different new coding projects and learning new technologies. One day, I hope to become a tech guru. </p>
+      
+      <i class="material-icons" style="font-size:36px">local_see</i>
+
+</div>
+<div class="w3-content" style="width:100%;position:relative">
+
+<img class="mySlides" src="PSUCLOCK.jpg" style="width:100%">
+<img class="mySlides" src="PSUField.jpg" style="width:100%">
+<img class="mySlides" src="PSUShrine.jpg" style="width:100%">
+
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+<br>
+</div>
+  </div>
+ 
+ </div>
+ 
+  <br>
+
+ <footer class="w3-container w3-light-grey w3-center" >
+  <div class="w3-teal w3-padding-12">
+    <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    
+    <p>Last Updated: July 5, 2016 </p>
+    
+</div>
+  </footer>
+  
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+
+</body>
+</html>
